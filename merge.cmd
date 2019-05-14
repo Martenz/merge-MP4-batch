@@ -30,10 +30,10 @@ ECHO|set /p=^^"" " >> run.cmd
 ECHO|set /p= -map "[outv]" -map "[outa]" %OUTPUT_VIDEO% >> run.cmd
 
 ECHO Batch merging script done, running
-timeout 1 > NUL
+::timeout 1 > NUL
 call run.cmd
 
-timeout 3 > NUL
+::timeout 3 > NUL
 del run.cmd
 ECHO Merging Complete. Press any key plus Enter to exit. 
 
